@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css">
+  <script>
+    tailwind.config = {
+      theme: {
+
+        extend: {
+          fontFamily: {
+            "monomanic": ["Monomaniac One", "sans-serif"],
+            "montaga": ["Montaga", "sans-serif"]
+          },
+          colors: {
+            "lightYellow": '#FFF9D4',
+            "grey": "#B9B9B9"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-lightYellow">
+  <nav class="bg-gray-800 h-28 p-10 flex items-center ">
+    <img src="assets/images/logo.svg" class="w-16 h-16 " alt="logo de alguma coisa que eu não sei">
+    <p class="font-monomanic text-lightYellow ml-2 text-3xl">Shinwa</p>
+    <img src="assets/icons/divisorIcon.svg" class="ml-10 h-14">
+
+  </nav>
+  <main class="p-20 flex">
+    <div class="flex flex-col items-center bg-black/50 w-3/5 p-6 rounded-2xl">
+      <h1 class="font-monomanic text-3xl text-white">Vídeo documentário</h1>
+      <iframe class="w-full h-96 mt-3 " src="https://www.youtube.com/embed/8AwIJZj07s8?si=KNXlNbGBsUdh5OZN"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="w-full mt-8 text-white">
+        <h2 class="font-monomanic text-2xl ">Descrição</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima reprehenderit velit quas suscipit
+          voluptates vel soluta! Nisi praesentium molestias pariatur illo officia, at debitis. Voluptas consectetur
+          ullam eligendi porro.
+          Ratione illum dicta ducimus expedita blanditiis vitae? Animi id sequi magni veritatis ut expedita saepe enim
+          et! Perspiciatis cumque sit deserunt. Placeat voluptas esse ipsum necessitatibus facere, aspernatur possimus
+          molestias?
+          Fugit commodi minima dolor ex enim. Alias nobis voluptates nam velit laudantium accusamus fuga repellat
+          dolorum quisquam debitis magni deserunt temporibus aliquam sequi optio, repudiandae non consectetur minima
+          inventore facilis!
+          Eveniet, ullam. Itaque blanditiis unde soluta, tempore sunt reiciendis deleniti expedita architecto nemo
+          dolor, mollitia magni obcaecati, aliquam suscipit ratione nulla numquam voluptas minima repudiandae. Culpa
+          omnis deserunt ullam quos!</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col bg-black/50 w-2/5 h-3/4 ml-20 pb-20  p-6 rounded-2xl">
+      <h1 class="text-3xl font-semibold text-white">Integrantes</h1>
+      <div class="flex flex-col items-center mt-5">
+       
+        <div class="flex items-center mt-5 w-full">
+          <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
+          <div class="ml-5 w-full">
+            <p class="font-montaga text-3xl text-white ">Eduardo Girão <span class="text-2xl text-grey">narrador e editor</span></p>
+            <div class="w-full h-0.5 bg-white"></div>
+          </div>
+      </div>
+      
+      <div class="flex items-center mt-5 w-full">
+        <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
+        <div class="ml-5 w-full">
+          <p class="font-montaga text-3xl text-white ">Felipe Takayuki <span class="text-2xl text-grey">apresentação</span></p>
+          <div class="w-full h-0.5 bg-white"></div>
+        </div>
+      </div>
+      
+      <div class="flex items-center mt-5 w-full">
+        <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
+        <div class="ml-5 w-full">
+          <p class="font-montaga text-3xl text-white ">Isaac Zanni <span class="text-2xl text-grey">apresentação</span></p>
+          <div class="w-full h-0.5 bg-white"></div>
+        </div> 
+      </div>
+      
+      <div class="flex items-center mt-5 w-full">
+        <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
+        <div class="ml-5 w-full">
+          <p class="font-montaga text-3xl text-white ">Marya Clara <span class="text-2xl text-grey">apresentação</span></p>
+          <div class="w-full h-0.5 bg-white"></div>
+        </div>
+      </div>
+      
+      <div class="flex items-center mt-5 w-full">
+          <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
+          <div class="ml-5 w-full">
+            <p class="font-montaga text-3xl text-white ">Mirela Silva <span class="text-2xl text-grey">roteiro</span></p>
+            <div class="w-full h-0.5 bg-white"></div>
+          </div>
+      </div>
+      
+      <div class="flex items-center mt-5 w-full">
+          <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
+          <div class="ml-5 w-full">
+            <p class="font-montaga text-3xl text-white ">Rauan Fellipe <span class="text-2xl text-grey">apresentação</span></p>
+            <div class="w-full h-0.5 bg-white"></div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
