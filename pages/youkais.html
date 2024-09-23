@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../index.css">
+  <script src="../js/talwind.config.js"></script>
+  <script src="../js/menu.js" defer></script>
+  <title>Menu Sanduíche</title>
+</head>
+<body >
+    <nav class="bg-gray-800 h-28 items-center p-10 flex">
+        <a href="../index.html" class="flex items-center">
+            <img src="../assets/images/logo.svg" class="w-16 h-16 " alt="logo de alguma coisa que eu não sei">
+            <p class="font-monomanic text-lightYellow ml-2 text-3xl">Shinwa</p>
+          </a>
+        <img src="../assets/icons/divisorIcon.svg" class="ml-10 h-14 max-sm:mr-auto max-sm:invisible">
+          <div class="sm:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
+          <div id="menu" class="hidden sm:flex">
+            <a href="../pages/origem.html" class="text-white text-3xl font-montaga ml-14 underline">Criação</a>
+            <a href="../pages/youkais.html" class="text-white text-3xl font-montaga ml-14 underline">Youkais</a>
+          </div>
+      </nav>
+      <div id="mobile-menu" class="flex w-full sm:hidden flex-col bg-gray-800 p-10 ">
+        <a href="../pages/origem.html" class="text-white text-3xl font-montaga underline">Criação</a>
+        <a href="../pages/youkais.html" class="text-white text-3xl font-montaga underline">Youkais</a>
+      </div>
+
+
+</body>
+</html>

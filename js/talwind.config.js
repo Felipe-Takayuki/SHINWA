@@ -8,7 +8,7 @@ tailwind.config = {
         },
         colors: {
           "lightYellow": '#FFF9D4',
-          "grey": "#B9B9B9"
+          "grey": "#E8E8E8"
         }
       }
     }

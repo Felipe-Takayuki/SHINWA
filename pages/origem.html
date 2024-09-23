@@ -1,29 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>O Mito da Criação</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../index.css">
-    <script src="../style/talwind.config.js" defer></script>
+    <script src="../js/talwind.config.js"></script>
+    <script src="../js/menu.js" defer></script>
 </head>
 <body class="bg-lightYellow">
-    <nav class="bg-gray-800 h-28 p-10 flex items-center ">
-        <img src="../assets/images/logo.svg" class="w-16 h-16 " alt="logo de alguma coisa que eu não sei">
-        <p class="font-monomanic text-lightYellow ml-2 text-3xl">Shinwa</p>
-        <img src="../assets/icons/divisorIcon.svg" class="ml-10 h-14">
-        <a href="#" class="text-white text-3xl font-montaga ml-14 hover:underline">Criação</a>
-        <a href="#" class="text-white text-3xl font-montaga ml-14 hover:underline">Deuses</a>
-    </nav>
-    <main class="w-full p-20 flex justify-center items-center">
-       <div class="border-4 bg-[url('../assets/images/background.svg')] bg-cover border-black w-3/4 h-96 bg-left-bottom p-10  rounded-2xl">
+    <nav class="bg-gray-800 h-28 items-center p-10 flex">
+        <a href="../index.html" class="flex items-center">
+            <img src="../assets/images/logo.svg" class="w-16 h-16 " alt="logo de alguma coisa que eu não sei">
+            <p class="font-monomanic text-lightYellow ml-2 text-3xl">Shinwa</p>
+        </a>
+        <img src="../assets/icons/divisorIcon.svg" class="ml-10 h-14 max-sm:mr-auto max-sm:invisible">
+          <div class="sm:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
+          <div id="menu" class="hidden sm:flex">
+            <a href="../pages/origem.html" class="text-white text-3xl font-montaga ml-14 underline">Criação</a>
+            <a href="../pages/youkais.html" class="text-white text-3xl font-montaga ml-14 underline">Youkais</a>
+          </div>
+      </nav>
+      <div id="mobile-menu" class="flex w-full sm:hidden flex-col bg-gray-800 p-10 ">
+        <a href="../pages/origem.html" class="text-white text-3xl font-montaga underline">Criação</a>
+        <a href="../pages/youkais.html" class="text-white text-3xl font-montaga underline">Youkais</a>
+      </div>
+    <main class="w-full max-md:p-0 p-20 max-lg:p-0 flex flex-col justify-center items-center">
         
-        <div class="flex items-center w-full">
-            <a href="#" onclick="window.history.back();"><img src="../assets/icons/chevron-left.svg" alt="seta para voltar" class="size-10"></a>
-            <p class="font-monomanic mx-auto text-5xl">O Mito da Criação</p>
-        </div>
+       <div class="border-4 max-lg:w-full max-lg:border-none  max-sm:bg-none bg-[url('../assets/images/background.svg')] bg-cover border-black w-3/4 max-md:w-full bg-left-bottom p-10   rounded-2xl">
+            <div class="flex items-center w-full">
+                <p class="font-monomanic mx-auto text-5xl">O Mito da Criação</p>
+            </div>
+            
+            <p class="text-justify text-2xl mt-12">The glitz, glamour, and unbridled decadence of the 80s are back in Yakuza 0.Fight like hell through Tokyo and Osaka with protagonist Kazuma Kiryu and series regular Goro Majima. Play as Kazuma Kiryu and discover how he finds himself in a world of trouble when a simple debt collection goes wrong and his mark winds up murdered. Then, step into the silver-toed shoes of Goro Majima and explore his “normal” life as the proprietor of a cabaret club.</p>
+            
+            <div class="flex mt-10 max-md:flex-col-reverse">
+                <p class="text-2xl text-justify mr-10 max-md:mr-0">The glitz, glamour, and unbridled decadence of the 80s are back in Yakuza 0.Fight like hell through Tokyo and Osaka with protagonist Kazuma Kiryu and series regular Goro Majima. Play as Kazuma Kiryu and discover how he finds himself in a world of trouble when</p>
+                <img src="../assets/images/originImg.svg" class="max-lg:w-4/6 max-md:w-full max-sm:mb-10   w-1/2  h-auto object-cover border-4 border-black rounded-3xl " alt="izanagi e izanami">
+            </div>
+       </div>
 
+       <div class="border-4 border-black rounded-2xl mt-10 w-3/4 h-96 flex">
+            <div class="h-full w-1/4 bg-blue-500 rounded-l-2xl"></div>
+            <div class="p-10">
+                <p class="font-monomanic mx-auto text-5xl">O Mito da Criação</p>
+            </div>
        </div>
     </main>
 </body>

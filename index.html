@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -7,27 +7,49 @@
   <title>SHINWA</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="index.css">
-  <script src="style/talwind.config.js" defer></script>
+  <script src="js/talwind.config.js"></script>
+  <script src="js/menu.js" defer></script>
 </head>
 
 <body class="bg-lightYellow">
-  <nav class="bg-gray-800 h-28 p-10 flex items-center ">
-    <img src="assets/images/logo.svg" class="w-16 h-16 " alt="logo de alguma coisa que eu não sei">
-    <p class="font-monomanic text-lightYellow ml-2 text-3xl">Shinwa</p>
-    <img src="assets/icons/divisorIcon.svg" class="ml-10 h-14">
-    <a href="pages/origem.html" class="text-white text-3xl font-montaga ml-14 hover:underline">Criação</a>
-    <a href="#" class="text-white text-3xl font-montaga ml-14 hover:underline">Deuses</a>
-  </nav>
-  <main class="p-20 flex">
-    <div class=" w-3/5">
+  <!-- Navegação -->
+  <nav class="bg-gray-800 h-28 items-center p-10 flex ">
+    <a href="index.html" class="flex items-center">
+      <img src="assets/images/logo.svg" class="w-16 h-16 " alt="logo de alguma coisa que eu não sei">
+      <p class="font-monomanic text-lightYellow ml-2 text-3xl">Shinwa</p>
+    </a>
 
-      <div class="flex flex-col items-center bg-black/50 w-full p-8 rounded-2xl">
-        <h1 class="font-monomanic text-5xl text-white">Vídeo documentário</h1>
-        <iframe class="w-full mt-8  h-96" src="https://www.youtube.com/embed/8AwIJZj07s8?si=KNXlNbGBsUdh5OZN"
+    <img src="assets/icons/divisorIcon.svg" class="ml-10 h-14 max-sm:mr-auto max-sm:invisible">
+      <div class="sm:hidden">
+        <button id="menu-btn" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+      <div id="menu" class="hidden sm:flex">
+        <a href="pages/origem.html" class="text-white text-3xl font-montaga ml-14 underline">Criação</a>
+        <a href="pages/youkais.html" class="text-white text-3xl font-montaga ml-14 underline">Youkais</a>
+      </div>
+  </nav>
+  <div id="mobile-menu" class="flex w-full sm:hidden flex-col bg-gray-800 p-10 ">
+    <a href="pages/origem.html" class="text-white text-3xl font-montaga underline">Criação</a>
+    <a href="pages/youkais.html" class="text-white text-3xl font-montaga underline">Youkais</a>
+  </div>
+
+
+  <main class="w-full max-sm:p-0 p-20 text-white max-sm:bg-black/50">
+  <div class="flex w-full max-xl:flex-col">
+  
+    <!-- video e descrição -->
+    <div class=" flex-1 max-xl:w-full  ">
+      <div class="flex flex-col items-center bg-black/50 max-sm:bg-transparent w-full p-8 rounded-2xl">
+        <h1 class="font-monomanic text-5xl ">Vídeo documentário</h1>
+        <iframe class="w-full mt-8 h-96" src="https://www.youtube.com/embed/8AwIJZj07s8?si=KNXlNbGBsUdh5OZN"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <div class="w-full text-white">
+        <div class="w-full ">
           <h2 class="font-monomanic text-3xl mt-12 mb-4 ">Descrição</h2>
           <p class="font-montaga font-normal text-justify text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minima reprehenderit velit quas suscipit
             voluptates vel soluta! Nisi praesentium molestias pariatur illo officia, at debitis. Voluptas consectetur
@@ -44,66 +66,73 @@
         </div>
       </div>
 
-      <div class="flex flex-col bg-black/50 w-full mt-10 p-8 rounded-2xl">
-        <h1 class="font-monomanic text-3xl text-white">Transcrição</h1>
-
-      </div>
+     
     </div>
-
-    <div class="flex flex-col bg-black/50 w-2/5 h-3/4 ml-20 pb-20  p-6 rounded-2xl">
-      <h1 class="text-3xl font-semibold text-white">Integrantes</h1>
+    <!-- fim do video e descrição -->
+    
+    <!-- //Integrantes -->
+    <div class="flex flex-col max-xl:w-full max-xl:m-0 max-xl:mt-5 bg-black/50 max-sm:bg-transparent w-2/5 h-3/4 ml-20 pb-20  p-6 rounded-2xl">
+      <h1 class="text-3xl font-semibold ">Integrantes</h1>
       <div class="flex flex-col items-center mt-5">
        
         <div class="flex items-center mt-5 w-full">
           <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
           <div class="ml-5 w-full">
-            <p class="font-montaga text-3xl text-white ">Eduardo Girão <span class="text-2xl text-grey">narrador e editor</span></p>
-            <div class="w-full h-0.5 bg-white"></div>
-          </div>
+            <p class="font-montaga text-3xl  ">Eduardo Girão <span class="text-2xl text-grey ">narração e edição</span></p>
+            </div>
       </div>
       
       <div class="flex items-center mt-5 w-full">
         <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
         <div class="ml-5 w-full">
-          <p class="font-montaga text-3xl text-white ">Felipe Takayuki <span class="text-2xl text-grey">roteiro e site</span></p>
-          <div class="w-full h-0.5 bg-white"></div>
+          <p class="font-montaga text-3xl  ">Felipe Takayuki <span class="text-2xl text-grey">roteiro e site</span></p>
         </div>
       </div>
       
       <div class="flex items-center mt-5 w-full">
         <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
         <div class="ml-5 w-full">
-          <p class="font-montaga text-3xl text-white ">Isaac Zanni <span class="text-2xl text-grey">apresentação</span></p>
-          <div class="w-full h-0.5 bg-white"></div>
+          <p class="font-montaga text-3xl  ">Isaac Zanni <span class="text-2xl text-grey">apresentação</span></p>
         </div> 
       </div>
       
       <div class="flex items-center mt-5 w-full">
         <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
         <div class="ml-5 w-full">
-          <p class="font-montaga text-3xl text-white ">Marya Clara <span class="text-2xl text-grey">apresentação</span></p>
-          <div class="w-full h-0.5 bg-white"></div>
+          <p class="font-montaga text-3xl  ">Marya Clara <span class="text-2xl text-grey">apresentação</span></p>
         </div>
       </div>
       
       <div class="flex items-center mt-5 w-full">
           <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
           <div class="ml-5 w-full">
-            <p class="font-montaga text-3xl text-white ">Mirela Silva <span class="text-2xl text-grey">roteiro</span></p>
-            <div class="w-full h-0.5 bg-white"></div>
-          </div>
+            <p class="font-montaga text-3xl  ">Mirela Silva <span class="text-2xl text-grey">roteiro</span></p>
+            </div>
       </div>
       
-      <div class="flex items-center mt-5 w-full">
+      <div class="flex items-center mt-5 w-full ">
           <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" class="w-12" alt="imagem de alguém">
           <div class="ml-5 w-full">
-            <p class="font-montaga text-3xl text-white ">Rauan Fellipe <span class="text-2xl text-grey">cameramano</span></p>
-            <div class="w-full h-0.5 bg-white"></div>
-          </div>
+            <p class="font-montaga text-3xl  ">Rauan Fellipe <span class="text-2xl text-grey">cameramano</span></p>
+            </div>
       </div>
       </div>
     </div>
+
+    <!-- fim dos integrantes -->
+  </div>
+  <div class="flex w-full mt-20 bg-black/50 max-sm:bg-transparent p-8 rounded-2xl">
+    <div class="flex-1">
+      <h1 class="font-monomanic text-3xl">Transcrição</h1>
+      <p class="font-montaga text-2xl mt-4">Aqui vai o conteúdo da transcrição...</p>
+    </div>
+  </div>
+
+
+
   </main>
+
 </body>
 
 </html>
+
