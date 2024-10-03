@@ -17,4 +17,3 @@ SHINWA é um site com o entuito de mostrar um pouco sobre a mitologia japonesa, 
 - Rauan
 
 
-### acesse o site: [SHINWA ](https://felipe-takayuki.github.io/SHINWA/)
